@@ -57,7 +57,7 @@ jobs:
 
     - name: Build and push image Aliyun
       run: |
-        sudo docker login --username=ljy18011141130 registry.cn-shenzhen.aliyuncs.com
+        sudo docker login --username=ljy18011141130 registry.cn-shenzhen.aliyuncs.com -p Ljy@1234
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
